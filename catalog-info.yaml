@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: go-json
+  description: |
+    A copy of the built-in go library for encoding and decoding json.
+    Original source code can be found here: https://github.com/golang/go/tree/master/src/encoding/json
+    The only reason we made a copy was to be able to have multiple struct field tags and not just `json`
+  annotations: 
+    github.com/project-slug: BESTSELLER/go-json
+spec:
+  type: library
+  lifecycle: production
+  owner: engineering-services
